@@ -1,30 +1,22 @@
-# See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-# This stage is used when running from VS in fast mode (Default for Debug configuration)
-FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
-USER $APP_UID
+FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+EXPOSE 80
+EXPOSE 443
 
-
-# This stage is used to build the service project
-FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
-ARG BUILD_CONFIGURATION=Release
+FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
 COPY ["MunsonPickles.Web/MunsonPickles.Web.csproj", "MunsonPickles.Web/"]
 COPY ["MunsonPickles.Shared/MunsonPickles.Shared.csproj", "MunsonPickles.Shared/"]
-RUN dotnet restore "./MunsonPickles.Web/MunsonPickles.Web.csproj"
+RUN dotnet restore "MunsonPickles.Web/MunsonPickles.Web.csproj"
 COPY . .
 WORKDIR "/src/MunsonPickles.Web"
-RUN dotnet build "./MunsonPickles.Web.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "MunsonPickles.Web.csproj" -c Release -o /app/build
 
-# This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
-ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./MunsonPickles.Web.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "MunsonPickles.Web.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
-# This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
