@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MunsonPickles.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f25fc8ef96b6885ff07440344c381961daa3c3c0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96f5bf549ea9102df9b8a40223b1ab4444a18098")]
 [assembly: System.Reflection.AssemblyProductAttribute("MunsonPickles.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MunsonPickles.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

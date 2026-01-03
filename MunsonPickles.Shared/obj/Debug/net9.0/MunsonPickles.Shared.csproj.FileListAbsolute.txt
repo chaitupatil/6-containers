@@ -1,0 +1,12 @@
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\bin\Debug\net9.0\MunsonPickles.Shared.deps.json
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\bin\Debug\net9.0\MunsonPickles.Shared.dll
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\bin\Debug\net9.0\MunsonPickles.Shared.pdb
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\MunsonPickles.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\MunsonPickles.Shared.AssemblyInfoInputs.cache
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\MunsonPickles.Shared.AssemblyInfo.cs
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\MunsonPickles.Shared.csproj.CoreCompileInputs.cache
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\MunsonPickles.Shared.sourcelink.json
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\MunsonPickles.Shared.dll
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\refint\MunsonPickles.Shared.dll
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\MunsonPickles.Shared.pdb
+C:\Users\chait\Documents\Personal\DotNet\Prpject\6-containers\MunsonPickles.Shared\obj\Debug\net9.0\ref\MunsonPickles.Shared.dll
